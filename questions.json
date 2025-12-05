@@ -1,0 +1,307 @@
+[
+  {
+    "id": "C01-01",
+    "courseId": "C01",
+    "topic": "Problématiques modernes",
+    "question": "Quelles sont deux difficultés majeures auxquelles une équipe logicielle est confrontée lorsque la complexité du projet augmente fortement ?",
+    "answer": "Lorsque la complexité d'un projet augmente, il devient plus difficile de garantir la qualité du code face aux changements fréquents et de bien coordonner plusieurs équipes travaillant en parallèle sur le même dépôt ou le même produit.",
+    "tags": ["Complexité", "Qualité", "Coordination"]
+  },
+  {
+    "id": "C01-02",
+    "courseId": "C01",
+    "topic": "Coût des anomalies",
+    "question": "Pourquoi un bug détecté en phase d'exploitation est-il généralement plus coûteux à corriger qu'un bug détecté lors du développement initial ?",
+    "answer": "En phase d'exploitation, le bug affecte des utilisateurs réels et nécessite souvent des interventions d'urgence : analyse de l'incident, correctif, nouveau déploiement, communication et parfois support dédié. Plus on s'éloigne de la phase de développement initial, plus les personnes impliquées et les risques sont nombreux, ce qui augmente le coût global.",
+    "tags": ["Bugs", "Coût", "Production"]
+  },
+  {
+    "id": "C01-03",
+    "courseId": "C01",
+    "topic": "Détection précoce",
+    "question": "En quoi la détection d'une anomalie pendant des tests intégrés est-elle déjà moins favorable qu'une détection directement sur le poste du développeur ?",
+    "answer": "Pendant les tests intégrés, plusieurs composants sont déjà assemblés et l'anomalie peut impliquer plusieurs équipes. La recherche de cause est plus longue, la coordination plus difficile et le correctif doit parfois être synchronisé avec d'autres évolutions, alors qu'une anomalie détectée immédiatement par le développeur est souvent corrigée rapidement dans un contexte isolé.",
+    "tags": ["Tests", "Bugs", "Détection précoce"]
+  },
+  {
+    "id": "C01-04",
+    "courseId": "C01",
+    "topic": "Cycle en V vs itératif",
+    "question": "Pourquoi un cycle de développement itératif de type Agile/DevOps réduit-il les risques par rapport à un cycle linéaire classique ?",
+    "answer": "Un cycle itératif permet de livrer plus fréquemment de petites évolutions, de recueillir rapidement des retours d'utilisateurs et de corriger les problèmes à chaque itération. Les risques sont ainsi répartis dans le temps et les erreurs ne s'accumulent pas jusqu'à la fin du projet, contrairement à un cycle linéaire où les tests et les corrections arrivent plus tard.",
+    "tags": ["Agile", "DevOps", "Risque"]
+  },
+  {
+    "id": "C01-05",
+    "courseId": "C01",
+    "topic": "DevOps",
+    "question": "Comment la démarche DevOps contribue-t-elle à concilier le besoin de rapidité des développeurs et le besoin de stabilité des opérations ?",
+    "answer": "DevOps crée une collaboration étroite entre développement et exploitation autour d'objectifs communs, en s'appuyant sur l'automatisation, les tests, le monitoring et des déploiements fréquents mais maîtrisés. Les développeurs peuvent livrer plus vite tandis que les équipes d'exploitation conservent de la visibilité et des garde-fous pour préserver la stabilité.",
+    "tags": ["DevOps", "Collaboration", "Stabilité"]
+  },
+  {
+    "id": "C01-06",
+    "courseId": "C01",
+    "topic": "Automatisation",
+    "question": "Au-delà du gain de temps, quels bénéfices qualitatifs une équipe peut-elle obtenir en automatisant sa chaîne de production logicielle ?",
+    "answer": "L'automatisation permet de réduire les erreurs humaines répétitives, de garantir une exécution homogène des builds et déploiements, de fiabiliser les tests et de libérer du temps pour des tâches à plus forte valeur ajoutée comme l'amélioration de l'architecture ou l'optimisation des performances.",
+    "tags": ["Automatisation", "Qualité", "Productivité"]
+  },
+  {
+    "id": "C01-07",
+    "courseId": "C01",
+    "topic": "Chaînes de production",
+    "question": "Comment définiriez-vous, en une phrase, une chaîne de production logicielle moderne basée sur le CI/CD ?",
+    "answer": "Une chaîne de production logicielle moderne est un ensemble automatisé de processus et d'outils qui construisent, testent, livrent et déploient en continu des applications à partir des changements de code commis dans un dépôt partagé.",
+    "tags": ["CI/CD", "Workflow", "Automatisation"]
+  },
+  {
+    "id": "C01-08",
+    "courseId": "C01",
+    "topic": "CI",
+    "question": "Dans la pratique, que se passe-t-il idéalement dans une approche d'intégration continue lorsqu'un développeur pousse du code sur le dépôt partagé ?",
+    "answer": "Lorsqu'un développeur pousse du code, un serveur d'intégration continue déclenche automatiquement un processus de build et de tests. Si tout est vert, le code est intégré au tronc commun, sinon le commit est rapidement signalé comme défaillant pour encourager une correction immédiate.",
+    "tags": ["Intégration continue", "Build", "Tests"]
+  },
+  {
+    "id": "C01-09",
+    "courseId": "C01",
+    "topic": "Livraison vs déploiement",
+    "question": "Dans un contexte réglementé où une validation humaine est obligatoire avant mise en production, pourquoi la livraison continue est-elle plus adaptée que le déploiement continu ?",
+    "answer": "La livraison continue prépare automatiquement des versions prêtes à être déployées, mais laisse la décision de mise en production à une validation manuelle. Cela respecte les contraintes réglementaires imposant un contrôle humain tout en conservant un workflow automatisé jusqu'à la génération du livrable.",
+    "tags": ["Livraison continue", "Déploiement", "Réglementation"]
+  },
+  {
+    "id": "C01-10",
+    "courseId": "C01",
+    "topic": "Métriques DORA",
+    "question": "Que révèle une fréquence de déploiement très faible au regard des métriques DORA, et quelle décision cela peut-il amener à prendre ?",
+    "answer": "Une fréquence de déploiement très faible indique que l'équipe livre rarement en production, ce qui augmente la taille des changements et les risques associés. Cela peut amener à revoir l'architecture de la chaîne CI/CD pour faciliter des déploiements plus fréquents et à réduire la taille des lots de fonctionnalités.",
+    "tags": ["DORA", "Fréquence de déploiement", "Amélioration continue"]
+  },
+  {
+    "id": "C01-11",
+    "courseId": "C01",
+    "topic": "MTTR",
+    "question": "Comment le temps moyen de rétablissement (Mean Time to Recovery) aide-t-il une équipe à évaluer sa capacité de réaction en cas d'incident en production ?",
+    "answer": "Le MTTR mesure la durée moyenne nécessaire pour restaurer un service après une panne. Un MTTR élevé signale une difficulté à diagnostiquer et corriger les problèmes ; l'équipe peut alors décider d'améliorer ses procédures de gestion d'incident, ses outils de monitoring ou ses mécanismes de rollback.",
+    "tags": ["DORA", "MTTR", "Incidents"]
+  },
+  {
+    "id": "C01-12",
+    "courseId": "C01",
+    "topic": "Git Flow vs GitHub Flow",
+    "question": "Dans quel type de projet Git Flow est-il généralement plus adapté que GitHub Flow, et pour quelle raison principale ?",
+    "answer": "Git Flow est particulièrement adapté aux grands projets avec des cycles de versions formalisés, car il sépare clairement les branches de développement, de release et de corrections urgentes. Cela facilite la préparation de versions stables tout en continuant à faire évoluer le code sur des branches dédiées.",
+    "tags": ["Git Flow", "GitHub Flow", "Branches"]
+  },
+  {
+    "id": "C02-01",
+    "courseId": "C02",
+    "topic": "Tâches automatisables",
+    "question": "Donnez un exemple de tâche répétitive du cycle de développement que votre équipe pourrait automatiser grâce à GitHub Actions.",
+    "answer": "Par exemple, votre équipe peut automatiser la compilation et les tests unitaires à chaque push sur une branche, au lieu de lancer ces commandes manuellement sur les postes de développement.",
+    "tags": ["GitHub Actions", "Automatisation", "Tests"]
+  },
+  {
+    "id": "C02-02",
+    "courseId": "C02",
+    "topic": "Nommage des workflows",
+    "question": "En quoi une convention de nommage cohérente des fichiers de workflow facilite-t-elle le travail d'une équipe sur un dépôt GitHub ?",
+    "answer": "Des noms explicites et cohérents, comme build.yml ou test-and-report.yml, permettent d'identifier rapidement le rôle de chaque workflow, facilitent la maintenance, la revue de code et l'onboarding de nouveaux membres dans l'équipe.",
+    "tags": ["Nommage", "Workflows", "Organisation"]
+  },
+  {
+    "id": "C02-03",
+    "courseId": "C02",
+    "topic": "Configuration des événements",
+    "question": "Si vous souhaitez qu'un workflow se déclenche uniquement lors des pushes sur la branche principale, dans quelle section du fichier YAML devez-vous définir cette règle ?",
+    "answer": "Il faut définir cette règle dans la section on:, en précisant l'événement push ainsi que la liste des branches concernées, par exemple on:\n  push:\n    branches: [\"main\"].",
+    "tags": ["Événements", "Branches", "Configuration"]
+  },
+  {
+    "id": "C02-04",
+    "courseId": "C02",
+    "topic": "schedule",
+    "question": "Dans quel cas un événement de type schedule est-il particulièrement utile pour un workflow GitHub Actions ?",
+    "answer": "L'événement schedule est utile pour exécuter des tâches planifiées indépendamment des commits, par exemple lancer chaque nuit des tests complets, une analyse de sécurité ou une génération de rapports.",
+    "tags": ["schedule", "CRON", "Tâches planifiées"]
+  },
+  {
+    "id": "C02-05",
+    "courseId": "C02",
+    "topic": "Marketplace Actions",
+    "question": "Quel avantage principal y a-t-il à utiliser une action provenant de la Marketplace GitHub au lieu de réécrire toute la logique en script shell dans un step ?",
+    "answer": "Une action Marketplace encapsule une logique réutilisable, testée et documentée, ce qui évite de réinventer la roue, réduit le risque d'erreurs et simplifie la maintenance des workflows.",
+    "tags": ["Marketplace", "Actions", "Réutilisation"]
+  },
+  {
+    "id": "C02-06",
+    "courseId": "C02",
+    "topic": "Sécurité Marketplace",
+    "question": "Quel risque votre équipe doit-elle garder en tête lorsqu'elle ajoute une action provenant d'un éditeur inconnu dans un workflow ?",
+    "answer": "Une action provenant d'un éditeur inconnu peut exécuter du code malveillant ou manipuler des secrets. Il est donc important de vérifier la réputation de l'action, son code source et son niveau de maintenance avant de l'utiliser.",
+    "tags": ["Sécurité", "Marketplace", "Actions"]
+  },
+  {
+    "id": "C02-07",
+    "courseId": "C02",
+    "topic": "Templates de workflow",
+    "question": "Dans quelle situation est-il judicieux de partir d'un template de workflow proposé par GitHub plutôt que de partir d'un fichier vide ?",
+    "answer": "Il est judicieux d'utiliser un template lorsqu'un projet suit un cas d'usage courant, par exemple un projet Node.js ou .NET standard. Le template propose une configuration de base adaptée au langage, que l'équipe peut ensuite personnaliser.",
+    "tags": ["Templates", "Workflows", "Initialisation"]
+  },
+  {
+    "id": "C03-01",
+    "courseId": "C03",
+    "topic": "Parallélisme des jobs",
+    "question": "Quel gain principal peut apporter l'exécution parallèle de plusieurs jobs indépendants dans un même workflow GitHub Actions ?",
+    "answer": "L'exécution parallèle permet de réduire la durée totale du workflow, car plusieurs tâches, par exemple des suites de tests sur différentes plateformes, sont exécutées simultanément au lieu d'être enchaînées.",
+    "tags": ["Parallélisme", "Jobs", "Performance"]
+  },
+  {
+    "id": "C03-02",
+    "courseId": "C03",
+    "topic": "Dépendances entre jobs",
+    "question": "Dans quel cas est-il nécessaire de définir une dépendance avec le mot-clé needs entre deux jobs dans un workflow ?",
+    "answer": "Il est nécessaire de définir une dépendance lorsque le second job ne doit démarrer que si le premier a fini, par exemple un job de déploiement qui utilise les artefacts générés par un job de build.",
+    "tags": ["needs", "Dépendances", "Workflows"]
+  },
+  {
+    "id": "C03-03",
+    "courseId": "C03",
+    "topic": "Variables personnalisées",
+    "question": "Quel est l'intérêt de définir une variable d'environnement au niveau du workflow plutôt qu'au niveau d'un seul job ?",
+    "answer": "Définir une variable au niveau du workflow permet de la réutiliser dans tous les jobs du même fichier YAML, ce qui évite les duplications et garantit une configuration cohérente pour l'ensemble du workflow.",
+    "tags": ["Variables", "Configuration", "Réutilisation"]
+  },
+  {
+    "id": "C03-04",
+    "courseId": "C03",
+    "topic": "Débogage avancé",
+    "question": "Quel est l'effet de l'activation des variables de débogage comme ACTIONS_RUNNER_DEBUG dans un workflow ?",
+    "answer": "L'activation de ces variables augmente le niveau de détail des logs, ce qui permet de mieux comprendre le comportement interne du runner et de diagnostiquer des problèmes complexes de configuration ou d'exécution.",
+    "tags": ["Débogage", "Logs", "Runner"]
+  },
+  {
+    "id": "C03-05",
+    "courseId": "C03",
+    "topic": "Contextes",
+    "question": "À quoi sert le contexte github dans les expressions GitHub Actions et donnez un exemple de propriété qu'il expose.",
+    "answer": "Le contexte github donne accès à des informations sur l'événement et le dépôt, par exemple github.ref pour la branche concernée ou github.repository pour le nom du dépôt. Ces valeurs peuvent être utilisées pour conditionner l'exécution d'étapes ou construire des messages.",
+    "tags": ["Contextes", "github", "Expressions"]
+  },
+  {
+    "id": "C03-06",
+    "courseId": "C03",
+    "topic": "success/failure/always",
+    "question": "Dans quel cas utiliseriez-vous la fonction always() dans une condition if d'un step plutôt que success() ?",
+    "answer": "La fonction always() est utile pour exécuter une étape quelle que soit l'issue des étapes précédentes, par exemple pour envoyer un rapport ou nettoyer des ressources même si des tests ont échoué, alors que success() n'exécuterait la même étape qu'en cas de réussite précédente.",
+    "tags": ["Gestion des erreurs", "always", "success"]
+  },
+  {
+    "id": "C03-07",
+    "courseId": "C03",
+    "topic": "continue-on-error",
+    "question": "Pourquoi une équipe peut-elle décider de configurer une étape avec continue-on-error plutôt que de laisser le workflow échouer immédiatement ?",
+    "answer": "Cette option est utile pour des checks non bloquants, par exemple un rapport de couverture encore en phase de mise en place. L'équipe obtient les informations de l'étape même en cas d'échec, sans bloquer tout le workflow de CI.",
+    "tags": ["continue-on-error", "Tolérance aux erreurs", "Workflows"]
+  },
+  {
+    "id": "C03-08",
+    "courseId": "C03",
+    "topic": "Outputs de jobs",
+    "question": "Dans quel cas privilégierez-vous l'utilisation de variables de sortie (outputs) d'un job plutôt que des artifacts pour partager une information ?",
+    "answer": "Les outputs sont adaptés au partage de petites données textuelles ou de chemins entre des jobs liés par needs, comme un numéro de version. Ils sont plus simples et rapides à utiliser que des fichiers d'artefacts pour ce type d'information.",
+    "tags": ["Outputs", "Jobs", "Données"]
+  },
+  {
+    "id": "C03-09",
+    "courseId": "C03",
+    "topic": "Cache",
+    "question": "Pourquoi est-il recommandé d'utiliser une clé de cache basée sur le hash d'un fichier de dépendances (par exemple package-lock.json ou pom.xml) ?",
+    "answer": "En calculant la clé de cache à partir du fichier de dépendances, le cache est automatiquement invalidé lorsque ces dépendances changent. Cela évite de réutiliser un cache obsolète tout en bénéficiant d'installations rapides lorsque les dépendances restent identiques.",
+    "tags": ["Cache", "hashFiles", "Dépendances"]
+  },
+  {
+    "id": "C04-01",
+    "courseId": "C04",
+    "topic": "Importance des tests",
+    "question": "Pourquoi les tests automatisés sont-ils particulièrement importants lorsqu'un workflow CI se déclenche à chaque modification de code ?",
+    "answer": "Ils permettent de vérifier de manière systématique que les nouvelles modifications n'introduisent pas de régressions, donnent un retour rapide aux développeurs et réduisent la probabilité de déployer un code instable en production.",
+    "tags": ["Tests", "CI", "Qualité"]
+  },
+  {
+    "id": "C04-02",
+    "courseId": "C04",
+    "topic": "Tests unitaires vs intégration",
+    "question": "Dans un projet utilisant une base de données, dans quelle situation les tests d'intégration sont-ils plus appropriés que de simples tests unitaires ?",
+    "answer": "Les tests d'intégration sont plus appropriés lorsqu'il faut vérifier le comportement global entre l'application et la base de données, par exemple la cohérence des requêtes, des transactions ou des migrations de schéma, ce qui dépasse le cadre d'une simple méthode isolée.",
+    "tags": ["Tests d'intégration", "Base de données", "Qualité"]
+  },
+  {
+    "id": "C04-03",
+    "courseId": "C04",
+    "topic": "Tests statiques et dynamiques",
+    "question": "Quelle différence principale existe-t-il entre des tests de qualité statiques du code et des tests dynamiques de sécurité ?",
+    "answer": "Les tests statiques analysent le code source sans l'exécuter afin de détecter des vulnérabilités ou mauvaises pratiques, tandis que les tests dynamiques exécutent l'application et simulent des attaques ou des scénarios d'utilisation pour repérer des failles en situation réelle.",
+    "tags": ["Analyse statique", "Tests dynamiques", "Sécurité"]
+  },
+  {
+    "id": "C04-04",
+    "courseId": "C04",
+    "topic": "Conteneurs Docker",
+    "question": "Quel avantage offre l'exécution d'un job GitHub Actions à l'intérieur d'un conteneur Docker spécifié dans le workflow ?",
+    "answer": "L'exécution dans un conteneur fournit un environnement isolé et préconfiguré, avec les outils et dépendances nécessaires. Cela garantit une plus grande reproductibilité entre les différents runs et rapproche l'environnement de CI de celui de production.",
+    "tags": ["Docker", "Runners", "Isolation"]
+  },
+  {
+    "id": "C04-05",
+    "courseId": "C04",
+    "topic": "Services",
+    "question": "Dans quel cas est-il pertinent d'ajouter un conteneur de service à un job GitHub Actions ?",
+    "answer": "Un conteneur de service est pertinent lorsqu'un job a besoin d'un composant externe comme une base de données ou une API pour réaliser des tests d'intégration, par exemple un service PostgreSQL démarré automatiquement pour la durée du workflow.",
+    "tags": ["Services", "Intégration", "Tests"]
+  },
+  {
+    "id": "C04-06",
+    "courseId": "C04",
+    "topic": "SonarQube Cloud",
+    "question": "Quel type d'informations supplémentaires SonarQube Cloud fournit-il par rapport à un simple rapport de couverture de tests ?",
+    "answer": "SonarQube Cloud détecte des bugs, des vulnérabilités de sécurité et évalue la maintenabilité. Il fournit aussi des indicateurs agrégés qui permettent de suivre l'évolution de la qualité au fil du temps.",
+    "tags": ["SonarQube", "Qualité", "Analyse"]
+  },
+
+  {
+    "id": "C04-07",
+    "courseId": "C04",
+    "topic": "Build Matrix",
+    "question": "Quel est l'intérêt d'utiliser une Build Matrix dans un job GitHub Actions pour une application multi-plateforme ?",
+    "answer": "La Build Matrix permet de définir en une seule fois plusieurs combinaisons d'OS ou de versions de runtime. GitHub Actions crée alors un job par combinaison, ce qui permet de vérifier automatiquement la compatibilité de l'application sur plusieurs environnements.",
+    "tags": ["Build Matrix", "Multi-plateforme", "Tests"]
+  },
+  {
+    "id": "C04-08",
+    "courseId": "C04",
+    "topic": "Exclusions de matrice",
+    "question": "Pourquoi est-il parfois nécessaire d'exclure certaines combinaisons d'OS et de versions dans une Build Matrix ?",
+    "answer": "Certaines combinaisons peuvent ne pas être pertinentes ou supportées, par exemple une version de framework incompatible avec un OS donné. Les exclure évite des échecs prévisibles et réduit le temps de calcul consommé.",
+    "tags": ["Build Matrix", "exclude", "Optimisation"]
+  },
+  {
+    "id": "C04-09",
+    "courseId": "C04",
+    "topic": "Runners personnalisés",
+    "question": "Dans quel type de situation la mise en place d'un runner autohébergé peut-elle être préférable à l'utilisation des runners hébergés par GitHub ?",
+    "answer": "Un runner autohébergé est utile lorsque le projet nécessite un environnement très spécifique, des ressources matérielles particulières ou l'accès à des systèmes internes non accessibles depuis les runners GitHub hébergés dans le cloud.",
+    "tags": ["Runners", "Autohébergé", "Environnement"]
+  },
+  {
+    "id": "C04-10",
+    "courseId": "C04",
+    "topic": "GITHUB_TOKEN",
+    "question": "À quoi sert le jeton GITHUB_TOKEN généré pour un workflow et pourquoi est-il recommandé d'en limiter les permissions ?",
+    "answer": "GITHUB_TOKEN permet au workflow d'appeler l'API GitHub ou d'exécuter certaines actions (comme créer des issues ou pousser du code) sans gérer une clé personnelle. Limiter ses permissions réduit l'impact potentiel d'un workflow mal configuré ou d'une action compromise.",
+    "tags": ["GITHUB_TOKEN", "Sécurité", "Permissions"]
+  }
+ ]
